@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<phpunit colors="true" stopOnFailure="false" bootstrap="bootstraptest.php">
+  <php>
+    <server name="SERVER_NAME" value="advaccouts"/>
+    <server name="REMOTE_ADDR" value="localhost"/>
+    <session name="_globals" value="null"/>
+  </php>
+  <testsuites>
+    <testsuite name="Core">
+      <directory suffix="Test.php">./tests/Core</directory>
+    </testsuite>
+    <testsuite name="App">
+      <directory suffix="Test.php">./tests/App</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
